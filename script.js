@@ -208,7 +208,7 @@ function sendOrder() {
     return;
   }
 
-  let text = "*Order from Millet Bites*\n\n";
+  let text = "*Order from Millet Bites B2B*\n\n";
   for(let name in cart) {
     const item = cart[name];
     text += `• ${name} x${formatQty(item.qty, item.unit)} = ₹${(item.price*item.qty).toFixed(2)}${item.offer ? ` (${item.offer})` : ''}\n`;
