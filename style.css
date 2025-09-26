@@ -493,10 +493,10 @@ nav a:hover::after {
 
 .modal-content {
   background: #fffaf4;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 25px;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   text-align: center;
 }
