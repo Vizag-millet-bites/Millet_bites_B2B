@@ -1,4 +1,3 @@
-
 // ---------- Product Data ----------
 const products = [
   { name: "Ragi Mixture", image: "Ragi Mixture.jpeg", price: 360, description: "Crunchy and wholesome Ragi mixture.", offer: "", unit: "1Kg" },
@@ -265,8 +264,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("load", function () {
   const popup = document.getElementById("popup");
-  const closeBtn = document.querySelector(".popup-close");
-  const shopBtn = document.querySelector("#home"); // Shop Now button
+  const closeBtn = popup.querySelector(".popup-close");
+  const shopBtn = popup.querySelector(".hero-btn"); // Correct button inside popup
 
   // Show popup on page load
   popup.style.display = "flex";
@@ -276,14 +275,14 @@ window.addEventListener("load", function () {
     popup.style.display = "none";
   });
 
-  // Close when clicking outside
+  // Close when clicking outside popup
   popup.addEventListener("click", function (e) {
     if (e.target === popup) {
       popup.style.display = "none";
     }
   });
 
-  // Close when clicking Shop Now
+  // Close when clicking Shop Now button
   shopBtn.addEventListener("click", function () {
     popup.style.display = "none";
   });
