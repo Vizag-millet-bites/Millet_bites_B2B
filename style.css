@@ -117,51 +117,46 @@ nav a:hover::after {
   height: 18px;
 }
 
-/* ---------- Hero Section ---------- */
+/* Hero Section */
 .hero {
-  position: relative;
-  background: linear-gradient(rgba(224, 123, 57, 0.75), rgba(224, 123, 57, 0.75)),
-              url('hero-bg.jpg') center/cover no-repeat;
-  min-height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: 90vh;
   padding: 0 40px;
+  background: linear-gradient(135deg, #ff7e5f, #e07b39);
+  color: #fff;
+  text-align: left;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
-  margin: auto;
-  gap: 40px;
+  z-index: 2;
 }
 
 .hero-text {
-  color: #fff;
   animation: fadeInUp 1s ease-out;
 }
 
 .hero-text h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 42px;
   font-weight: 700;
-  text-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+  margin-bottom: 25px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 .hero-list {
   list-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .hero-list li {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 .hero-list a {
@@ -171,50 +166,32 @@ nav a:hover::after {
 
 .hero-btn {
   display: inline-block;
-  padding: 14px 40px;
+  padding: 16px 45px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #ff7e5f, #e07b39);
+  background: linear-gradient(135deg, #ffe259, #ffa751);
   border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .hero-btn:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
-/* Hero Image */
-.hero-image img {
-  width: 380px;
-  max-width: 100%;
-  border-radius: 25px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  animation: fadeIn 1.2s ease-in;
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive */
 @media screen and (max-width: 900px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text h2 {
-    font-size: 36px;
-  }
-
-  .hero-list li {
-    justify-content: center;
-  }
-
-  .hero-image img {
-    margin-top: 20px;
-    width: 250px;
-  }
+  .hero-text h2 { font-size: 32px; }
+  .hero-list li { font-size: 15px; }
+  .hero-btn { padding: 14px 35px; font-size: 16px; }
 }
 
 /* ---------- Menu / Product Grid ---------- */
