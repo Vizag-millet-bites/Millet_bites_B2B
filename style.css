@@ -124,7 +124,7 @@ nav a:hover::after {
   justify-content: center;
   min-height: 90vh;
   padding: 0 40px;
-  background: linear-gradient(135deg, #ff7e5f, #e07b39);
+  background: #ff4c4c;
   color: #fff;
   text-align: left;
 }
