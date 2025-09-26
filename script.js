@@ -1,10 +1,16 @@
 // ---------- Products ----------
 const products = [
-  {id:1,name:'Ragi Cookies',price:180,description:'Crunchy Ragi cookies.',image:'ragi.jpg',offer:'10% Off'},
-  {id:2,name:'Jowar Chips',price:220,description:'Healthy Jowar chips.',image:'jowar.jpg',offer:'5% Off'},
-  {id:3,name:'Foxtail Bites',price:200,description:'Tasty Foxtail millet snacks.',image:'foxtail.jpg',offer:''},
-  {id:4,name:'Kodo Mix',price:250,description:'Kodo millet mix.',image:'kodo.jpg',offer:'15% Off'},
-  {id:5,name:'Little Millet Laddoo',price:300,description:'Nutritious laddoo.',image:'little.jpg',offer:''},
+  {id:1 name: "Ragi Mixture", image: "Ragi Mixture.jpeg", price: 360, description: "Crunchy and wholesome Ragi mixture.", offer: "", unit: "1Kg" },
+  {id:2 name: "Ragi Chegodilu", image: "Ragi Chegodilu.jpeg", price: 360, description: "Traditional chegodilu made from ragi.", offer: "Fast Seller", unit: "1Kg" },
+  {id:3 name: "Ragi Murukkulu", image: "Ragi Murukkulu.jpeg", price: 360, description: "Crispy murukkulu with millet goodness.", offer: "", unit: "1Kg" },
+  {id:4 name: "Jowar Mixture", image: "Jowar Mixture.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "", unit: "1Kg" },
+  {id:5 name: "Jowar Murukkulu", image: "Jowar Murukkulu.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "", unit: "1Kg" },
+  {id:6 name: "Jowar Ribbon Pakodi", image: "Jowar Ribbon Pakodi.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "Fast Seller", unit: "1Kg" },
+  {id:7 name: "Arikalu Jantikalu", image: "Arikalu Jantikalu.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "", unit: "1Kg" },
+  {id:8 name: "Samalu Boondi", image: "Samalu Boondi.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "Fast Seller", unit: "1Kg" },
+  {id:9 name: "Foxtail Sev", image: "Foxtail Sev.jpeg", price: 360, description: "Light and tasty jowar mixture.", offer: "Fast Seller", unit: "1Kg" },
+  {id:10 name: "Dry Fruit Laddu", image: "Dry Fruit Laddu.jpeg", price: 960, description: "Rich laddus with dry fruits.", offer: "Fast Seller", unit: "1Kg" },
+  {id:11 name: "Cashew Bar", image: "Cashew Bar.jpeg", price: 150, description: "Crunchy cashew bars, great snack.", offer: "", unit: "1 Bar of 170g" }
 ];
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
